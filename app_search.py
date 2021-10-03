@@ -4,7 +4,7 @@ import time
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
-print("PROGRAM TO FIND DETAILS OF APPS IN THE PLAY STORE")
+print("PROGRAM TO FIND DETAILS OF APPS IN THE PLAY STORE...")
 driver = webdriver.Chrome(ChromeDriverManager().install())
 url=input("ENTER THE URL OF PAGE IN THE PLAY STORE :  ")   #https://play.google.com/store/search?q=casino&c=apps&hl=es&gl=es
 driver.get(url)       #enter URL of page in playstore
