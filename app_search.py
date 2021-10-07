@@ -9,8 +9,8 @@ url=input("ENTER THE URL OF PAGE IN THE PLAY STORE :  ")   #https://play.google.
 driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.get(url)       #enter URL of page in playstore
 time.sleep(3)
-scrool_num=int(input("ENTER \n 1 TO SCRAPE 50 APPS FROM  THE PLAY STORE \n 2 TO SCRAPE 100 APPS FROM THE PLAY STORE \n 3 TO SCRAPE 150 APPS FROM THE PLAY STORE \n 4 TO SCRAPE 200 APPS FROM THE PLAY STORE \n ENTER NUMBER : "))
-for i in range(1,scrool_num):
+scroll_num=int(input("ENTER \n 1 TO SCRAPE 50 APPS FROM  THE PLAY STORE \n 2 TO SCRAPE 100 APPS FROM THE PLAY STORE \n 3 TO SCRAPE 150 APPS FROM THE PLAY STORE \n 4 TO SCRAPE 200 APPS FROM THE PLAY STORE \n ENTER NUMBER : "))
+for i in range(1,scroll_num):
     driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")       #to scroll to the end of the page
     time.sleep(3)
     
